@@ -41,7 +41,7 @@ run(function () {
                 path += location + "&zoom=" + zoom;
                 path += "&size=250x250&maptype=" + map + "&markers=color:red|label:P|";
                 path += location + "&sensor=false";
-
+		alert(path);
                 x$('img#static_map').attr('src', path);
             });
         });
