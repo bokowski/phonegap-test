@@ -46,7 +46,7 @@ run(function () {
                 path += location + "&sensor=false";
 		alert(path);
                 x$('img#static_map').attr('src', path);
-            });
+            }, { enableHighAccuracy: true });
         });
     });
     when('#save', function () {
